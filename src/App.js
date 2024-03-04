@@ -6,6 +6,7 @@ import LoginPage from './component/LoginPage';
 function App() {
   return (
     <div>
+      <NavBar></NavBar>
     <LoginPage></LoginPage>
     </div>
    
