@@ -1,0 +1,68 @@
+/* Bootstrap CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css");
+
+/* Custom Styles */
+.candidate-profile {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.profile-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.section-title {
+  color: #021b35;
+  font-weight: 700;
+  border-bottom: 2px solid #294101;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-align: left; /* Align title to the left */
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #555;
+}
+
+.custom-file-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #051357;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-label:hover {
+  background-color: #000000;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #ffffff;
+}
