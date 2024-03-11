@@ -1,37 +1,57 @@
-import React, { useState } from 'react';
-import './LoginPage.css'
+
+import React, { useState } from "react";
+import email from '../Components/Assets/person.png';
+import password from '../Components/Assets/password.png';
+import person from '../Components/Assets/email.png';
+import './LoginPage.css';
+import { useHistory } from 'react-router-dom';
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const handleLogin = () => {
-    // Check username and password
-    if (username === 'admin' && password === 'password') {
-      // Successful login, redirect or perform action
-      alert('Login Successful!');
-    } else {
-      // Failed login, display error message
-      setErrorMessage('Invalid username or password');
-    }
+  const[action,setAction]=useState('Login');
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    // Add your form submission logic here
   };
-
+    
+    
+  
   return (
     <div>
-      <h2>Login Page</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Username:</label>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+      <div className="login-container">
+        <div className="signup-form">
+          <h2>{action}</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="inputs">
+              {action==="Login"?<div></div>:<div className="input">
+              <img src={email} alt="usericon"></img>
+              <input type="text"   placeholder="Name"/>
+            </div>}
+            
+            <div className="input">
+              <img src={person} alt="emailicon"></img>
+              <input type="email"  placeholder="Email Id"/>
+            </div>
+
+            <div className="input">
+              <img src={password} alt="passicon"></img>
+              <input type="password"  placeholder="Password"/>
+            </div>
+
+            <div className="span-container">Forgot password?<span id="span">click here</span></div>
+
+            <div className="submit-container">
+            <button type="submit" className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</button>
+            <button type="submit"className={action==="Sign Up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</button>
+            </div>
+           
+            </div>
+
+            
+
+          </form>
+         
         </div>
-        <div>
-          <label>Password:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+      </div>
     </div>
   );
 };
