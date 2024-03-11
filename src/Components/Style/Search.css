@@ -1,0 +1,40 @@
+.search {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .search h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .form-group input[type="text"],
+  .form-group select {
+    margin-top: 5px;
+  }
+  
+  .search button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,27 +1,24 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import NavBar from './Components/Navbar';
-// import LoginPage from './Components/LoginPage';
 import React from 'react';
-import SignInSignUpPage from './Components/SignInSignUpPage';
-import CandidateProfile from './Components/CandidateProfile';
-import './Components/Style/style.css'
+import Header from './Components/Header'; // Assuming components are in a 'Components' folder
+import Footer from './Components/Footer';
+import Hero from './Components/Hero';
+import Search from './Components/Search';
+import Trending from './Components/Trending';
+import Content from './Components/Content';
+import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter for routing
 
 function App() {
   return (
-    <div className='App'>
-      {/* //<NavBar></NavBar>
-    //<LoginPage></LoginPage> */}
-     <header className='App-header'>
-     <h1>Welcome to Our Job Portal</h1>
-     </header>
-     <main>
-      {/* <SignInSignUpPage></SignInSignUpPage> */}
-  <CandidateProfile></CandidateProfile>
-     </main>
-
-    </div>
-   
+    <BrowserRouter>  {/* Wrap the entire application with BrowserRouter */}
+      <div className="app">
+        <Header />
+        <Hero />
+        <Search />
+        <Trending />
+        <Content />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

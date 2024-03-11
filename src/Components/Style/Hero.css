@@ -1,0 +1,27 @@
+.hero {
+  /* Removed background-color for full image coverage */
+  background: url("N:\Bitcode\Project\job-portal\src\Components\images\human-resources-concept-with-hand.jpg") no-repeat center/cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
