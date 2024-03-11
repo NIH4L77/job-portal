@@ -1,0 +1,183 @@
+.recruiter-profile {
+  padding: 20px;
+}
+
+.profile-card {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.section-title {
+  font-weight: 700;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.profile-preview {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.location-selectors {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.location-selectors select {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-hover);
+}
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.custom-file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-file-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.custom-file-label::after {
+  content: "Browse";
+  color: var(--btn-primary);
+  margin-left: 8px;
+}
+
+.custom-file-label:hover {
+  background-color: #e9e9e9;
+}
+
+.custom-file-input:focus + .custom-file-label {
+  box-shadow: 0 0 0 0.2rem rgba(42, 100, 150, 0.2);
+}
+
+.custom-file-input:disabled + .custom-file-label {
+  background-color: #e9ecef;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+  content: "Browse";
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.form-group .form-control {
+  flex: 1;
+}
+
+.form-group .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-group .form-col {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="file"],
+.input-group select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: var(--btn-primary);
+  box-shadow: 0 0 0 3px rgba(42, 100, 150, 0.2);
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+}

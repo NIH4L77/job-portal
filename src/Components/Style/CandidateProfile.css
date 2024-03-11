@@ -1,0 +1,220 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Colors */
+:root {
+  --main-color: #1a3353;
+  --accent-color: #2c4b7d;
+  --hover-color: #456da1;
+  --btn-primary: #007bff; /* Use Bootstrap's primary color for consistency */
+  --btn-hover: #0056b3;
+  --btn-danger: #dc3545;
+  --btn-danger-hover: #bd2130;
+}
+
+/* Layout */
+.container {
+  max-width: 100%; /* Allow full-width on larger screens */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Profile Card */
+.profile-card {
+  width: 80%; /* Adjust based on design preference */
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); /* Initial background color */
+  animation: pulse 5s infinite alternate; /* Apply animation */
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Profile Header */
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Profile Picture */
+.profile-image {
+  width: 100%; /* Renamed class for clarity */
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Card Body */
+.card.profile-card .card-body {
+  padding: 30px; /* Increase padding for better spacing */
+  margin: 0 auto; /* Center the card body horizontally */
+  max-width: 600px; /* Set maximum width */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.card-title {
+  font-size: 20px; /* Adjusted font size for better hierarchy */
+  margin-bottom: 10px; /* Maintain some margin */
+}
+
+.card-text {
+  font-size: 16px; /* Adjusted font size for readability */
+  margin-bottom: 20px; /* Maintain some margin */
+}
+
+.card-actions {  /* Renamed class for clarity */
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.card-actions .btn {
+  margin-left: 10px; /* Add margin between buttons */
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 20px; /* Reduced bottom margin */
+}
+
+.form-group {
+  width: 100%; /* Ensure full width */
+  max-width: 400px; /* Set maximum width for better responsiveness */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.form-group label {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.form-group .form-control {
+  flex: 1;
+}
+
+.form-group .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-group .form-col {
+  flex: 1;
+  padding: 0 10px;
+}
+
+/* Input Styles */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="file"],
+.input-group select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px; /* Increase padding for larger inputs */
+  font-size: 18px; /* Increase font size for better readability */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: var(--btn-primary);
+  box-shadow: 0 0 0 3px rgba(42, 100, 150, 0.2);
+
+}
+  /* Section Titles */
+  .section-title {
+    font-weight: 700;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color); /* Add underline */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  /* Button Styles */
+  .btn {
+    padding: 10px 20px; /* Adjusted padding for better proportion */
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    background-color: var(--btn-primary);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--btn-hover);
+  }
+
+  .btn-danger {
+    background-color: var(--btn-danger);
+    color: #fff;
+  }
+
+  .btn-danger:hover {
+    background-color: var(--btn-danger-hover);
+  }
+
+  /* File Input Styles */
+  .custom-file-label {
+    padding: 14px 20px; /* Adjusted padding for larger file input */
+  }
+
+  .custom-file-label:hover {
+    background-color: #e9e9e9;
+  }
+
+  .custom-file-label::after {
+    content: "Browse";
+    color: var(--btn-primary);
+    margin-left: 8px;
+  }
+
+  /* Media Queries for Responsive Design (Example) */
+  @media (max-width: 768px) {
+    .profile-card {
+      width: 100%; /* Make card full-width on smaller screens */
+    }
+
+    .form-group {
+      flex-direction: column; /* Stack form elements on small screens */
+    }
+  }
