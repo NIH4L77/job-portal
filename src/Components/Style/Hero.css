@@ -3,6 +3,8 @@
   background: url("N:\Bitcode\Project\job-portal\src\Components\images\human-resources-concept-with-hand.jpg") no-repeat center/cover;
   padding: 100px 0;
   text-align: center;
+  color: #000000; /* Set text color to white for better contrast */
+  text-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
 }
 
   

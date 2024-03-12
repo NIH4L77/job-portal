@@ -6,18 +6,21 @@ import Search from './Components/Search';
 import Trending from './Components/Trending';
 import Content from './Components/Content';
 import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter for routing
+import CandidateProfile from './Components/CandidateProfile';
 
 function App() {
   return (
     <BrowserRouter>  {/* Wrap the entire application with BrowserRouter */}
-      <div className="app">
+      {/* <div className="app">
         <Header />
         <Hero />
         <Search />
         <Trending />
         <Content />
         <Footer />
-      </div>
+      </div> */}
+      {/* <CandidateProfile></CandidateProfile> */}
+      <SignIn
     </BrowserRouter>
   );
 }

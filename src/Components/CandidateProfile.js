@@ -215,7 +215,7 @@ const CandidateProfile = () => {
 
   const handleCityChange = (event) => {
     setSelectedCity(event.target.value);
-  };
+  }; 
 
   const filteredCities = selectedState ? states[selectedState] : [];
 
