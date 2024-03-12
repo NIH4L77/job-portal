@@ -1,6 +1,7 @@
 .hero {
   /* Removed background-color for full image coverage */
-  background: url("N:\Bitcode\Project\job-portal\src\Components\images\human-resources-concept-with-hand.jpg") no-repeat center/cover;
+  /* background: url("N:\Bitcode\Project\job-portal\src\Components\images\human-resources-concept-with-hand.jpg") no-repeat center/cover; */
+ background-color: #fff;
   padding: 100px 0;
   text-align: center;
   color: #000000; /* Set text color to white for better contrast */

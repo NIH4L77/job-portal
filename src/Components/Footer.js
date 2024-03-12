@@ -1,15 +1,14 @@
-
-import "./Style/Footer.css"
+import style from "./Style/Footer.module.css"
 import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <h3 className="footer-title">Search</h3>
-            <ul className="list-unstyled">
+    <footer className={style.footer}>
+      <div className={style.container}>
+        <div className={style.row}>
+          <div className={style["col-md-4"]}>
+            <h3 className={style.footertitle}>Search</h3>
+            <ul className={style.listunstyled}>
               <li>
                 <a href="#">Web Design</a>
               </li>
@@ -30,9 +29,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
-            <h3 className="footer-title">Company</h3>
-            <ul className="list-unstyled">
+          <div className={style["col-md-4"]}>
+            <h3 className={style.footertitle}>Company</h3>
+            <ul className={style.listunstyled}>
               <li>
                 <a href="#">About Us</a>
               </li>
@@ -44,9 +43,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
-            <h3 className="footer-title">Support</h3>
-            <ul className="list-unstyled">
+          <div className={style["col-md-4"]}>
+            <h3 className={style.footertitle}>Support</h3>
+            <ul className={style.listunstyled}>
               <li>
                 <a href="#">Support Center</a>
               </li>
@@ -59,9 +58,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div>
+        <div className={style.row}>
           <div className="col align-self-center">
-            <p className="copyright">
+            <p className={style.copyright}>
               Copyright © 2024 All rights reserved | This page is developed  with ❤️ by  Priti | Nihal | Shraddha
             </p>
           </div>
@@ -72,5 +71,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-

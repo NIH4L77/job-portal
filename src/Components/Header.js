@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link
+import { BrowserRouter } from 'react-router-dom';
 import "./Style/Header.css"
 
 const Header = () => {
@@ -8,9 +9,9 @@ const Header = () => {
       <div className="container">
         <Link to="/" className="logo">
           {/* Replace with your logo image or text */}
-           job-portal
+          job-portal
         </Link>
-
+        {/* Removed <BrowserRouter> */}
         <nav className="nav">
           <ul>
             <li>

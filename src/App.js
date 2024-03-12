@@ -1,27 +1,31 @@
-import React from 'react';
-import Header from './Components/Header'; // Assuming components are in a 'Components' folder
-import Footer from './Components/Footer';
+import logo from './logo.svg';
+import './App.css';
+import LoginPage from './Components/LoginPage';
+import HomePage from './Components/HomePage';
+import CandidateProfile from './Components/CandidateProfile';
 import Hero from './Components/Hero';
 import Search from './Components/Search';
+import Header from './Components/Header';
+import Content from './Components/Content';
 import Trending from './Components/Trending';
 import Content from './Components/Content';
 import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter for routing
-import CandidateProfile from './Components/CandidateProfile';
 
 function App() {
   return (
-     <BrowserRouter>  {/* Wrap the entire application with BrowserRouter */}
-       <div className="app">
-       {/* <Header /> 
-           <Hero />
-         <Search />
-         <Trending />
-  <Content /> */}
-         <Footer />   
-       </div>
-     </BrowserRouter>
-    // <CandidateProfile></CandidateProfile>
+    <BrowserRouter>  {/* Wrap the entire application with BrowserRouter */}
+      <div className="app">
+        <Header />
+        <Hero />
+        <Search />
+        <Trending />
+        <Content />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
