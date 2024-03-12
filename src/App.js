@@ -10,18 +10,17 @@ import CandidateProfile from './Components/CandidateProfile';
 
 function App() {
   return (
-    <BrowserRouter>  {/* Wrap the entire application with BrowserRouter */}
-      {/* <div className="app">
-        <Header />
-        <Hero />
-        <Search />
-        <Trending />
-        <Content />
-        <Footer />
-      </div> */}
-      {/* <CandidateProfile></CandidateProfile> */}
-      <SignIn
-    </BrowserRouter>
+     <BrowserRouter>  {/* Wrap the entire application with BrowserRouter */}
+       <div className="app">
+       {/* <Header /> 
+           <Hero />
+         <Search />
+         <Trending />
+  <Content /> */}
+         <Footer />   
+       </div>
+     </BrowserRouter>
+    // <CandidateProfile></CandidateProfile>
   );
 }
 

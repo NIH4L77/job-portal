@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -14,6 +15,7 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section Title */
 .section-title {
   font-size: 28px;
   font-weight: bold;
@@ -24,6 +26,7 @@ body {
   text-align: center;
 }
 
+/* Form Styles */
 .form-group {
   margin-bottom: 30px;
 }
@@ -35,18 +38,20 @@ body {
   color: #555;
 }
 
-.form-control {
+.form-control,
+.custom-file-input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.form-control:focus {
+.form-control:focus,
+.custom-file-input:focus {
   border-color: #007bff;
-  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 2px rgba(0, 123, 255, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(0, 123, 255, 0.2);
 }
 
 .custom-file {
@@ -54,21 +59,6 @@ body {
   display: inline-block;
   width: 100%;
   margin-bottom: 30px;
-}
-
-.custom-file-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.custom-file-input:focus {
-  border-color: #007bff;
-  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 2px rgba(0, 123, 255, 0.2);
 }
 
 .custom-file-label {
@@ -81,9 +71,10 @@ body {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Button Styles */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -95,21 +86,19 @@ body {
   background-color: #007bff;
   color: #fff;
   transition: background-color 0.3s ease;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
   background-color: #0056b3;
 }
 
-.success-message {
-  color: #28a745;
-  font-size: 16px;
-  margin-top: 10px;
+/* Align Buttons */
+.text-center {
+  text-align: center;
 }
 
-.error-message {
-  color: #dc3545;
-  font-size: 16px;
-  margin-top: 10px;
+/* Align Save Info Button */
+.save-info-button {
+  text-align: center;
 }
